@@ -1,0 +1,37 @@
+def main(self):
+	Calls def select_docs(self):
+    o	Select the docx (Exam Bill Demo.docx).
+	Calls def self.select_sample_ excel(self):
+    o	Select the sample excel (sample.xlsx).
+	Calls def generate_excel_from_docs(self):
+    o	Calls self.extract_data_from_docx()
+        	def self.extract_department_line()
+            •	get self.dept
+    o	Generate all_tables.xlsx (It includes all the tables from Exam Bill Demo.docx file).
+	Calls def process_first_excel(self):
+    o	Create excel file for every teacher.
+        	Extract name, designation, teachers_department
+        	Calls def print_matching_value_for_file(self, new_file, name, designation, department)
+            •	Get some information
+            •	Calls self.translate_to_bengali(name)
+                o	Check if def self.should_skip_translation(part)
+                    	Return true if part(text) is special, else return false
+                o	Translate the name
+            •	Calls self.translate_to_bengali(designation)
+                o	Check if def self.should_skip_translation(part)
+                    	Return true if part(text) is special, else return false
+                o	Translate the designation
+            •	Calls self.dept_translate_to_bengali(self.dept.lower())
+                o	Translate dept (Mother Department)
+            •	Calls self.dept_translate_to_bengali(department.lower())
+                o	Translate dept (department)
+            •	Calls self.convert_year_term_suffixes_to_bengali(self.year)
+                o	Translate year
+            •	Calls self.convert_year_term_suffixes_to_bengali(self.term)
+                o	Translate term
+        	Get the bills for the corresponding teacher from the all_tables.xlsx.
+        	Determine which bills is needed to write in which cell.
+    o	Calls self.clear_labels()
+
+
+
